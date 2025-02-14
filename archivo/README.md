@@ -40,13 +40,17 @@ Ahora que iniciaste sesión correctamente, puedes descargar la imagen de MariaDB
 
 
 docker pull mariadb:10.6
+
 ![alt text](<WhatsApp Image 2025-02-13 at 10.17.20.jpeg>)
+
 
 Cuando la descarga termine, puedes verificar que la imagen esté disponible con:
 
 
 docker images
-![alt text](<WhatsApp Image 2025-02-13 at 10.17.39.jpeg>)
+
+![alt text](<WhatsApp Image 2025-02-13 at 10.17.39.jpeg>) 
+
 
 Verás la imagen de mariadb listada con la versión 10.6.
 
@@ -67,7 +71,10 @@ docker run -d `
 -p "3307:3306" `
 mariadb:10.6
 
+
 ![alt text](<WhatsApp Image 2025-02-13 at 10.18.00.jpeg>)
+
+
 
 📌 Explicación:
 
@@ -109,6 +116,8 @@ docker ps
 
 ![alt text](<WhatsApp Image 2025-02-13 at 10.18.26-1.jpeg>)
 
+
+
 Si ves mariadb_server en la lista, todo está bien.
 
 Si no aparece, revisa los logs con:
@@ -126,6 +135,8 @@ Para acceder a MariaDB dentro del contenedor, usa este comando en PowerShell o C
 docker exec -it mariadb_server mysql -u root -p
 
 ![alt text](<WhatsApp Image 2025-02-13 at 10.19.33.jpeg>)
+
+
 
 docker exec permite ejecutar comandos dentro de un contenedor.
 
@@ -170,6 +181,8 @@ CREATE TABLE usuarios (
 SHOW TABLES;
 
 ![alt text](<WhatsApp Image 2025-02-13 at 10.19.46-1.jpeg>)
+
+
 
 4. Consultar la estructura de la tabla:
 
